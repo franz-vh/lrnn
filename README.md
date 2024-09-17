@@ -6,7 +6,7 @@ The complete system developed, known as U-shaped locally recurrent neural networ
 
 <p align="center"><img src="docs/ulrnn.JPG" width="300"></p>
 
-In this system, the encoder, also known as hierarchical locally recurrent neural network (**HLRNN**), learns, in a self-supervised way, representations of its input at different levels of abstraction. The decoder, on the other hand, can be used for prediction and action selection. The encoder is basically a stack of locally recurrent blocks (LRBs), which are shallow self-supervised representation learning systems for temporal data (and an updated version of the earlier neocortex-inspired locally recurrent neural network, **NILRNN**, designed as an efficient model of the feedforward circuits in areas of the neocortex):
+In this system, the encoder, also known as hierarchical locally recurrent neural network (**HLRNN**), learns, in a self-supervised way, representations of the input at different levels of abstraction. The decoder, on the other hand, can be used for prediction and action selection. The encoder is basically a stack of locally recurrent blocks (LRBs), which are shallow self-supervised representation learning systems for temporal data (and an updated version of the earlier neocortex-inspired locally recurrent neural network, **NILRNN**, designed as an efficient model of the feedforward circuits in areas of the neocortex):
 
 <p align="center"><img src="docs/lrb.jpeg" width="400"></p>
 
@@ -34,7 +34,7 @@ The main part of the code is written in Python and relies on the PyTorch library
 
 ## Setting up the datasets
 
-Arguably, this is the messier part to set up this code. Alternatively, one can adapt and use their own sequential datasets (the code doesn't accept batched sequences, see next section). The setting up is different for the two modules:
+Arguably, this is the messiest part to set up this code. Alternatively, one can adapt and use their own sequential datasets (the code doesn't accept batched sequences, see next section). The setting up is different for the two modules:
 
 ### `inputdata`
 
